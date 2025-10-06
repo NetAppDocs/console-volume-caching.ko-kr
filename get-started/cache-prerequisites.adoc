@@ -22,12 +22,12 @@ summary: 환경, 네트워크 액세스, 로그인 및 웹 브라우저에 대�
 ** 클러스터의 클러스터 간 LIF
 
 
-* NetApp 콘솔에서:
+* NetApp Console 에서 :
 +
-** 콘솔 에이전트는 NetApp 콘솔에서 설정해야 합니다.  모든 소스 및 대상 클러스터는 동일한 콘솔 에이전트에 있어야 합니다. 를 참조하세요 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["BlueXP 빠른 시작"^] 그리고 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["콘솔 에이전트에 대해 알아보세요"^] .
+** 콘솔 에이전트는 NetApp Console 에서 설정해야 합니다.  모든 소스 및 대상 클러스터는 동일한 콘솔 에이전트에 있어야 합니다. 를 참조하세요 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["BlueXP 빠른 시작"^] 그리고 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["콘솔 에이전트에 대해 알아보세요"^] .
 ** 작업 환경을 설정해야 합니다.
 ** 클러스터는 대상 작업 환경에 추가되어야 하며 켜짐 또는 저하된 상태여야 합니다.
-** 표준 NetApp 콘솔 요구 사항. 참조하다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["NetApp 콘솔 요구 사항"^] .
+** 표준 NetApp Console 요구 사항. 참조하다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["NetApp Console 요구 사항"^] .
 
 
 
