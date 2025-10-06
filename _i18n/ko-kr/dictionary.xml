@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="5f63db6bf0512dc0612ee852c1faf373" category="doc">BlueXP volume caching</block>
+  <block id="b83ba84e8b66440b0a36bc88ba58ce87" category="paragraph">ONTAP 9 소프트웨어의 기능인 BlueXP volume caching 파일 배포를 간소화하고, 리소스를 사용자와 컴퓨팅 리소스가 있는 곳에 더 가깝게 가져와 WAN 지연 시간을 줄이고, WAN 대역폭 비용을 낮추는 원격 캐싱 기능입니다.  볼륨 캐싱은 원격 장소에 지속적이고 쓰기 가능한 볼륨을 제공합니다.  BlueXP volume caching 사용하면 데이터 액세스 속도를 높이거나 액세스가 많은 볼륨의 트래픽을 오프로드할 수 있습니다.  캐시 볼륨은 읽기 작업이 많은 작업, 특히 클라이언트가 동일한 데이터에 반복적으로 액세스해야 하는 경우에 이상적입니다.</block>
+  <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">BlueXP volume caching 사용하면 클라우드, 특히 Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP 및 온프레미스 작업 환경에서 캐싱 기능을 사용할 수 있습니다.</block>
+  <block id="2012f97762e54c6c0012de439f8eb421" category="inline-link-macro">볼륨 캐싱에 대해 자세히 알아보세요</block>
+  <block id="32e43821995e99fb72cdac5dd21f43b4" category="paragraph"><block ref="d441c17803a6d3d32848ba89d4709eae" category="inline-link-macro-rx"></block> .</block>
+  <block id="9b5a1e6c05cb5a9a8a4d5f1e2605ce55" category="doc">BlueXP volume caching 이 이제 볼륨 캐싱입니다.</block>
+  <block id="f8e8412fccd7f025d572fec3a13f08fe" category="paragraph">BlueXP volume caching 볼륨 캐싱으로 이름이 바뀌었습니다.</block>
+  <block id="1404848cfe6595d928cbdff8fae23869" category="paragraph">NetApp 콘솔 왼쪽 탐색 모음에서 *모빌리티* &gt; *볼륨 캐싱*을 선택하여 액세스할 수 있습니다.</block>
+  <block id="bc2fe31b1e2682a9a79513d792e9c721" category="section-title">BlueXP 는 이제 NetApp 콘솔입니다.</block>
+  <block id="995c8f79a8e07fbd8d519e45d03d6004" category="paragraph">강화되고 재구성된 BlueXP 기반을 기반으로 구축된 NetApp 콘솔은 엔터프라이즈급 온프레미스 및 클라우드 환경 전반에서 NetApp 스토리지와 NetApp 데이터 서비스를 중앙에서 관리하여 실시간 통찰력, 더 빠른 워크플로, 간소화된 관리를 제공하며, 높은 보안성과 규정 준수를 보장합니다.</block>
+  <block id="2ef9d641d45afe99b74ad6f9a9f797ad" category="inline-link-macro">NetApp 콘솔 릴리스 노트</block>
+  <block id="07a0717927710f1dcb5683cb20238dcb" category="paragraph">변경된 내용에 대한 자세한 내용은 다음을 참조하세요.<block ref="a3987562479f1a66db4eec298b79e00c" category="inline-link-macro-rx"></block> .</block>
+  <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">이 FAQ는 질문에 대한 빠른 답변을 찾는 데 도움이 될 수 있습니다.</block>
+  <block id="acb4c9a04e4760c031f72ceb892088ee" category="doc">볼륨 캐싱에 대한 자주 묻는 질문</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
+  <block id="0d6e5faf80b288a1d3277954d0b55ae8" category="inline-link"><block ref="0d6e5faf80b288a1d3277954d0b55ae8" category="inline-link-rx"></block></block>
+  <block id="6c9cda3f575fce2b59c81ac734f25c87" category="paragraph">*볼륨 캐싱 URL은 무엇입니까?*  브라우저에서 URL을 입력하세요.<block ref="50afa4cc4e54d55b53b9cfffe1bc930c" category="inline-link-rx"></block> BlueXP 콘솔에 접속하려면.</block>
+  <block id="ce01fa818e0ea3677f470fba4801dc2d" category="paragraph">*볼륨 캐싱을 사용하려면 라이선스가 필요합니까?* NetApp 라이선스 파일(NLF)은 필요하지 않습니다.</block>
+  <block id="03de66a3bc883d54e10eff243b71fbab" category="paragraph">*볼륨 캐싱을 어떻게 활성화하나요?*  볼륨 캐싱에는 어떠한 활성화도 필요하지 않습니다.  볼륨 캐싱 옵션은 NetApp 콘솔 왼쪽 탐색 창에 자동으로 나타납니다.</block>
+  <block id="11b0112abbdba4f187a0d5cd55f67b6c" category="summary">볼륨 캐싱은 원격 장소에 지속적이고 쓰기 가능한 볼륨을 제공합니다.  볼륨 캐싱을 사용하면 데이터 액세스 속도를 높이거나 액세스 빈도가 높은 볼륨의 트래픽을 오프로드할 수 있습니다.  캐시 볼륨은 읽기 작업이 많은 작업, 특히 클라이언트가 동일한 데이터에 반복적으로 액세스해야 하는 경우에 이상적입니다.</block>
+  <block id="4c4d2004da2d4dab5bb560145ef937c7" category="doc">볼륨 캐싱에 대해 알아보세요</block>
+  <block id="acb735bd5a7c773d33ba29a45c50737a" category="paragraph">ONTAP 9 소프트웨어의 기능인 볼륨 캐싱은 파일 배포를 간소화하고, 리소스를 사용자와 컴퓨팅 리소스가 있는 곳에 더 가깝게 배치하여 WAN 지연 시간을 줄이고, WAN 대역폭 비용을 낮추는 원격 캐싱 기능입니다.  볼륨 캐싱은 원격 장소에 지속적이고 쓰기 가능한 볼륨을 제공합니다.  볼륨 캐싱을 사용하면 데이터 액세스 속도를 높이거나 액세스 빈도가 높은 볼륨의 트래픽을 오프로드할 수 있습니다.  캐시 볼륨은 읽기 작업이 많은 작업, 특히 클라이언트가 동일한 데이터에 반복적으로 액세스해야 하는 경우에 이상적입니다.</block>
+  <block id="479f19475e2dd084513dab64284eb721" category="paragraph">볼륨 캐싱을 사용하면 클라우드, 특히 Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP 및 온프레미스 작업 환경에서 캐싱 기능을 사용할 수 있습니다.</block>
+  <block id="dd5ab32ff61153926563e4d2110445b6" category="paragraph">볼륨 캐싱은 지점 사무실에서 회사 데이터 세트에 액세스할 수 있도록 해줍니다.  클러스터 내 여러 컨트롤러에서 자주 액세스해야 하는 데이터인 _핫 데이터_를 제공하면 주요 애플리케이션에 제공되는 성능을 높일 수 있습니다.  또한 전 세계 여러 지역의 사용자에게 핫 데이터를 로컬로 캐싱하면 중앙 집중식 데이터 세트에 동시에 액세스할 수 있어 협업을 강화할 수 있으며, 핫 데이터에 액세스할 때 받는 응답 시간도 줄일 수 있습니다.</block>
+  <block id="3c031b939f6ec312ee601d021e7a6644" category="section-title">NetApp 콘솔</block>
+  <block id="953ec04cfd6a17011e0166e01775e88a" category="paragraph">볼륨 캐싱은 NetApp 콘솔을 통해 액세스할 수 있습니다.</block>
+  <block id="0a0979a6d279475a420ea5c279943daa" category="paragraph">NetApp 콘솔은 엔터프라이즈급 온프레미스 및 클라우드 환경 전반에서 NetApp 스토리지 및 데이터 서비스를 중앙에서 관리할 수 있는 기능을 제공합니다. NetApp 데이터 서비스에 액세스하고 사용하려면 콘솔이 필요합니다. 관리 인터페이스로서, 하나의 인터페이스에서 여러 스토리지 리소스를 관리할 수 있습니다. 콘솔 관리자는 기업 내 모든 시스템의 저장소와 서비스에 대한 액세스를 제어할 수 있습니다.</block>
+  <block id="7118a6b22768dabe4720d84710ea1e43" category="paragraph">NetApp Console을 사용하려면 라이선스나 구독이 필요하지 않으며, 스토리지 시스템이나 NetApp 데이터 서비스에 대한 연결을 보장하기 위해 클라우드에 Console 에이전트를 배포해야 할 때만 요금이 부과됩니다. 그러나 콘솔에서 액세스할 수 있는 일부 NetApp 데이터 서비스는 라이선스 기반이거나 구독 기반입니다.</block>
+  <block id="4d0bb76e32bfe205406b10f5dfa9d47b" category="paragraph">자세히 알아보세요<block ref="e6368f2dd82be1e975475a1098863578" category="inline-link-rx"></block> .</block>
+  <block id="da693da874d690d16f540e10e65a2321" category="section-title">캐시란 무엇인가요?</block>
+  <block id="a6d4ceba96fb1d711128b98f2e1eaa34" category="paragraph">캐시는 호스트와 데이터 소스 사이에 있는 임시 저장 위치입니다.  캐시의 목적은 소스 데이터 중 자주 액세스되는 부분을 저장하는 방식으로, 소스에서 데이터를 가져오는 것보다 더 빠르게 데이터를 제공할 수 있도록 하는 것입니다.  캐시는 여러 호스트에서 데이터에 두 번 이상 액세스하고 공유하는 읽기 중심 환경에서 가장 유용합니다.  캐시 시스템은 데이터 소스가 있는 시스템보다 빠른데, 이는 더 빠른 저장 시스템과 캐시 저장 공간이 호스트와 가까운 것을 통해 달성됩니다.</block>
+  <block id="1ff36319d88227573243b34cfcc88ca5" category="section-title">볼륨 캐싱의 이점</block>
+  <block id="e7b882d61a65174f42223c66c70096ee" category="paragraph">볼륨 캐싱은 다음과 같은 이점을 제공합니다.</block>
+  <block id="ac662afad2227cc15160fd5b457146bd" category="list-text">하이브리드 클라우드 인프라에서 성능 가속화</block>
+  <block id="00ebffbe73c6303da2faaad0ab45e519" category="list-text">한 클라우드 공급자의 데이터를 다른 클라우드 공급자에게 캐싱하여 클라우드 사일로를 제거합니다.</block>
+  <block id="3539435a6de515609cc1b8543224f713" category="list-text">낮은 보관 비용</block>
+  <block id="a1b38c81c5d745e1d6ec22e5dd6e03bc" category="list-text">여러 지리적 위치에서 협업</block>
+  <block id="c9ffd0422125f32e82a20e75ccd4fa42" category="list-text">변화하는 IT 환경에 더 빠르게 적응할 수 있는 능력</block>
+  <block id="02472e415a539d0a8886679760e38e96" category="list-text">클라우드에서 호스팅되는 주문형 또는 구독 기반 볼륨 캐싱</block>
+  <block id="90b267b6d1a3a176db85194015816bdf" category="section-title">볼륨 캐싱으로 할 수 있는 일</block>
+  <block id="96a73f3eb476a386c0d4022fdcd79b05" category="paragraph">볼륨 캐싱을 사용하면 다음과 같은 목표를 달성하기 위해 여러 NetApp 기술을 최대한 활용할 수 있습니다.</block>
+  <block id="b165c27356ec72ed87e0d89023b56a29" category="list-text">한 클라우드 공급자에서 다른 공급자로 캐시 데이터 전송</block>
+  <block id="6d14d0fea89a1c59e9646774b2dce3ef" category="list-text">캐시 내보내기 정책 보기 및 편집</block>
+  <block id="fd420f91fd55c70ed0b581da9becda92" category="list-text">기존 캐시 크기 조정</block>
+  <block id="920c52111a4f53311c7b220606acb733" category="list-text">캐시 삭제</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">비용</block>
+  <block id="3d55ff142f5e56c58635f96fb60c71d0" category="paragraph">NetApp 볼륨 캐싱에 대해 요금을 청구하지 않지만, 적용되는 데이터 유입 및 유출 요금에 대해서는 클라우드 공급업체를 확인해야 합니다.</block>
+  <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">라이센스</block>
+  <block id="4417f17d6aeb62c4957925fd7183a07c" category="paragraph">볼륨 캐싱에는 특별한 ONTAP 라이선스가 필요하지 않습니다.</block>
+  <block id="331a9d90178c830eec27205a387c2dfa" category="section-title">볼륨 캐싱 작동 방식</block>
+  <block id="72534499f07252c8719e630ee58c0667" category="paragraph">캐시 볼륨은 소스 볼륨에 의해 백업되는, 밀도가 낮은 볼륨입니다.  캐시 볼륨은 소스 볼륨과 동일한 클러스터에 있을 수도 있고 다른 클러스터에 있을 수도 있습니다.</block>
+  <block id="30f631144fe5bb7751ead1fe9ac7c6f5" category="paragraph">캐시 볼륨은 모든 데이터가 캐시 볼륨에 있을 필요 없이 소스 볼륨의 데이터에 액세스할 수 있도록 해줍니다.  캐싱 볼륨의 데이터 저장은 핫 데이터(작업 데이터 또는 최근에 사용된 데이터)만 보존함으로써 효율적으로 관리됩니다.</block>
+  <block id="37557b8c90039bea4fa08bc67cc6b243" category="paragraph">볼륨 캐싱은 캐시 볼륨에 클라이언트가 요청한 데이터가 포함되어 있는 경우 요청을 읽습니다.  그렇지 않은 경우, 볼륨 캐싱 서비스는 소스 볼륨에서 데이터를 요청하고 클라이언트 요청을 처리하기 전에 데이터를 저장합니다.  이후의 데이터 요청은 캐시 볼륨에서 직접 처리됩니다.  이렇게 하면 동일한 데이터에 반복적으로 액세스할 때 성능이 향상됩니다. 첫 번째 요청 이후에는 데이터가 더 이상 네트워크를 통해 이동하거나 과부하된 시스템에서 제공될 필요가 없기 때문입니다.</block>
+  <block id="4017ec2b586cd47355d18cabf7609659" category="summary">NetApp 콘솔에서 서비스에 액세스하여 볼륨 캐싱을 시작하세요.</block>
+  <block id="152cc532030bdb299df4c0963b720fb4" category="doc">볼륨 캐싱 액세스</block>
+  <block id="cf073b020cede5876551f4905bc27cea" category="paragraph">NetApp 콘솔을 사용하여 볼륨 캐싱 옵션에 액세스합니다.</block>
+  <block id="8e917942a77709dfd28c155f42a97553" category="inline-link">로그인에 대해 자세히 알아보세요</block>
+  <block id="acca0538f1851a14dc6ee2d63f1533a9" category="paragraph">NetApp 콘솔에 로그인하려면 NetApp 지원 사이트 자격 증명을 사용할 수 있습니다.<block ref="83012c4a40bb3321733997744c83daa9" category="inline-link-rx"></block> .</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
+  <block id="8859695a85afcf4d196795433a572988" category="inline-link">NetApp 콘솔</block>
+  <block id="205d84b6377f703c3dad4c8973e9f9fe" category="list-text">웹 브라우저를 열고 이동하세요<block ref="729bc7d8b8964e56d3f2c909ebee01e1" category="inline-link-rx"></block> .</block>
+  <block id="0daac1b9cd4c3a240bf2f6b44ba178a1" category="paragraph">NetApp 콘솔 로그인 페이지가 나타납니다.</block>
+  <block id="4a43cddfeeabba4570c14c252dec0bd1" category="list-text">콘솔에 로그인합니다.</block>
+  <block id="685bf0c6938aac694b7f715ca5ab7594" category="list-text">콘솔 왼쪽 탐색에서 *모빌리티* &gt; *볼륨 캐싱*을 선택합니다.</block>
+  <block id="e9d0563880c518332c5657bb388dc935" category="inline-image-macro">볼륨 캐싱을 위한 랜딩 페이지 이미지</block>
+  <block id="575a3014ec6abcbafb4ee878f15c2659" category="paragraph">볼륨 캐싱 대시보드가 나타납니다.<block ref="1d5ddc4a04ccc8130b7d403f1b6e6b88" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d29462a6f3d69287d617ba8e6d5e1f25" category="inline-link-macro">볼륨 캐싱 설정</block>
+  <block id="9aa0485090e68790cb76e5d3be940fcf" category="admonition">콘솔 에이전트가 설정되어 있지 않으면 *콘솔 에이전트 추가* 옵션이 나타납니다. <block ref="041a8dd494e8c29eb6f2a25bc2aba9af" category="inline-link-macro-rx"></block> .</block>
+  <block id="c8af4e66767b2c892a94c205333ff750" category="summary">환경, 네트워크 액세스, 로그인 및 웹 브라우저에 대한 지원을 확인하여 볼륨 캐싱을 시작하세요.</block>
+  <block id="783400bbca91266f6f919a9d8401a790" category="doc">볼륨 캐싱 전제 조건</block>
+  <block id="84804abf3404a430e85ae3299587a6b0" category="paragraph">운영 환경, 로그인, 네트워크 접속, 웹 브라우저의 준비 상태를 확인하여 시작하세요.</block>
+  <block id="56df6cb020427fdcc7046462d2a74484" category="paragraph">볼륨 캐싱을 사용하려면 환경이 모든 요구 사항을 충족하는지 확인해야 합니다.</block>
+  <block id="9e25219bfef39dc2d94805b599244f8d" category="list-text">ONTAP 9.8 이상</block>
+  <block id="6bc8ee47a10f11a50d1b88f0e1669fee" category="list-text">클러스터 관리자 ONTAP 권한</block>
+  <block id="bb2db94d282af73e9408b243f1158770" category="list-text">클러스터의 클러스터 간 LIF</block>
+  <block id="b0bec4e694abbf7d9f8eab802a66698d" category="list-text">NetApp 콘솔에서:</block>
+  <block id="69b085a23d3ed85c84455b9288792bf2" category="inline-link">BlueXP 빠른 시작</block>
+  <block id="91e534d044a3d9c6a1c8575f89e73c9b" category="inline-link">콘솔 에이전트에 대해 알아보세요</block>
+  <block id="e2a5fa776bf988cfa9dbfb9f02da9619" category="list-text">콘솔 에이전트는 NetApp 콘솔에서 설정해야 합니다.  모든 소스 및 대상 클러스터는 동일한 콘솔 에이전트에 있어야 합니다. 를 참조하세요<block ref="4b1866f17dc6bd66f88d9d6839084df6" category="inline-link-rx"></block> 그리고<block ref="be47360914e9c5a32b9a06216cb3cec0" category="inline-link-rx"></block> .</block>
+  <block id="1644e8c8713b99aa2a509321e1b03ba5" category="list-text">작업 환경을 설정해야 합니다.</block>
+  <block id="c58af1fa22ce44dd1a1025cb0f4b05f2" category="list-text">클러스터는 대상 작업 환경에 추가되어야 하며 켜짐 또는 저하된 상태여야 합니다.</block>
+  <block id="70409a142107b4016b7ef004178c29d8" category="inline-link">NetApp 콘솔 요구 사항</block>
+  <block id="bed786cbf4ab55e1445650548602862c" category="list-text">표준 NetApp 콘솔 요구 사항. 참조하다<block ref="2fae4ce1ffb16d5bf2c9555180b86caf" category="inline-link-rx"></block> .</block>
+  <block id="fe8a9d57951a636664c54f5cf14a06e1" category="summary">몇 단계만 거치면 볼륨 캐싱을 시작할 수 있습니다.</block>
+  <block id="cd7075003264e6a8e9370e8f19275492" category="doc">볼륨 캐싱을 위한 빠른 시작</block>
+  <block id="7f9fe4f52eb64124e68264f256f36881" category="paragraph">볼륨 캐싱을 시작하는 데 필요한 단계에 대한 개요는 다음과 같습니다. 각 단계 내의 링크를 클릭하면 자세한 내용을 제공하는 페이지로 이동합니다.</block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">하나</block>
+  <block id="a2d56436fc6737079209e6c74380c5fb" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>필수 조건 검토</block>
+  <block id="d73fd850784e1d8dbda69ab3ca51e7cf" category="inline-link-macro">귀하의 환경이 이러한 요구 사항을 충족하는지 확인하세요.</block>
+  <block id="8aa6fa53d4ea5eb2e6cf7864a0814952" category="paragraph"><block ref="6d00d645d4db26355e2a4b6e5ebcd192" category="inline-link-macro-rx"></block> .</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">둘</block>
+  <block id="774adf0706578efe4197e79fc434cdf3" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>볼륨 캐싱 설정</block>
+  <block id="c5265a2111872d8a36af35ac9df5bd6a" category="inline-link-macro">Vlume 캐싱 설정</block>
+  <block id="35b195de89ecea9ff719e6aa5e3eeccf" category="paragraph"><block ref="1969983886bb9c72f05c6ce62e307cc3" category="inline-link-macro-rx"></block> .</block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">삼</block>
+  <block id="fb35cdd7029fec15aadbdddd879fa161" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>다음은 무엇인가요?</block>
+  <block id="d2b78bb589121de795035bc504cc0150" category="paragraph">다음에 할 수 있는 일은 다음과 같습니다.</block>
+  <block id="15a05e063d4c5c1c840a1358ea5e2f1a" category="inline-link-macro">캐시 만들기</block>
+  <block id="6d8c022b864e0ac2a0521e01b0a148ef" category="list-text"><block ref="08994cd66141241fcfdbc13ed0e82eff" category="inline-link-macro-rx"></block> .</block>
+  <block id="36d2dfb130cc56d5eda3b8749b5bd6df" category="inline-link-macro">캐시 관리, 캐시 편집, 캐시 크기 조정 또는 캐시 삭제</block>
+  <block id="7feb77d14601611c1fbc66f8aea36e7b" category="list-text"><block ref="06832ac35077da45cc1af571e236bfcd" category="inline-link-macro-rx"></block> .</block>
+  <block id="d5478d6eec7f9909d140c5c5dc7b8049" category="inline-link-macro">볼륨 캐싱 작업 모니터링</block>
+  <block id="3a4d754d0c4ec1d71c54dc063043088b" category="list-text"><block ref="1f92bc5779f2f7dc3b853d4a9f3506c9" category="inline-link-macro-rx"></block> .</block>
+  <block id="8272cbc57a0f666d4fb3501b0d6d1f56" category="summary">볼륨 캐싱을 사용하려면 몇 가지 단계를 거쳐 설정하세요.</block>
+  <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">전제 조건</block>
+  <block id="28afabf1cd8784eb84b3926b994169ea" category="list-text">검토<block ref="c6b48cc2d47e2f989af724d3298e55c0" category="inline-link-macro-rx"></block> 귀하의 환경이 준비되었는지 확인하세요.</block>
+  <block id="3847705074d8f4f4a3ad3b8e472e4a7c" category="list-text">콘솔 에이전트를 만듭니다.</block>
+  <block id="6933f6b443b103ffc6df5f0c40cf6114" category="list-text">볼륨 캐싱을 지원할 수 있는 시스템을 만듭니다.</block>
+  <block id="01f52dd5b9c3fcf42a482c9c21f24432" category="section-title">NetApp 콘솔에서 콘솔 에이전트 만들기</block>
+  <block id="f7b8941f69c5e6de95c2c5651f12e340" category="paragraph">다음 단계는 NetApp 콘솔에서 콘솔 에이전트를 만드는 것입니다.</block>
+  <block id="368b569705fc2b4a6ccbd31e2dddc770" category="inline-link">콘솔 에이전트를 만드는 방법</block>
+  <block id="3a0d8363f9a5b119c844e8e4b624f5d8" category="paragraph">볼륨 캐싱을 사용하기 전에 콘솔 에이전트를 생성하려면 해당 내용을 설명하는 NetApp 콘솔 설명서를 참조하십시오.<block ref="2d846d70ffa1be89a4045faa3f83584f" category="inline-link-rx"></block> .</block>
+  <block id="f46a3c01f849eec231a129ff7cb55f02" category="section-title">시스템 생성</block>
+  <block id="2dc0e2079607a1629e0ad455c80fed71" category="paragraph">아직 그렇게 하지 않았다면 소스와 타겟에 대한 시스템을 만들어야 합니다.</block>
+  <block id="5df55e7de34e04e3fbd5d9ffd4e44939" category="inline-link">Amazon FSx for ONTAP 시스템 생성</block>
+  <block id="16294c836385c080dfc02e110cdfc625" category="list-text"><block ref="16294c836385c080dfc02e110cdfc625" category="inline-link-rx"></block></block>
+  <block id="a3272fd5c4bd1903de9b1b2f5e1665a8" category="inline-link">AWS에서 Cloud Volumes ONTAP 실행</block>
+  <block id="5fc68dd6c2f9e8f9867008288922972c" category="list-text"><block ref="5fc68dd6c2f9e8f9867008288922972c" category="inline-link-rx"></block></block>
+  <block id="70c84621a7336f391b4b7df86b5f1396" category="inline-link">Azure에서 Cloud Volumes ONTAP 실행</block>
+  <block id="382c836de95fd7a0d956bd916d408106" category="list-text"><block ref="382c836de95fd7a0d956bd916d408106" category="inline-link-rx"></block></block>
+  <block id="ce3503849689227dd8014f8ed3f5cb5e" category="inline-link">GCP에서 Cloud Volumes ONTAP 실행</block>
+  <block id="b1fc335b745b5be1ddedded19d077bf9" category="list-text"><block ref="b1fc335b745b5be1ddedded19d077bf9" category="inline-link-rx"></block></block>
+  <block id="6c0fb6078ec778ca2319e375a19e994b" category="inline-link">기존 Cloud Volumes ONTAP 시스템 추가</block>
+  <block id="c10b8a77856c1097f8b3038f1bfab45b" category="list-text"><block ref="c10b8a77856c1097f8b3038f1bfab45b" category="inline-link-rx"></block></block>
+  <block id="a1ebf612d281c8e7fb16bbfa253b9627" category="inline-link">ONTAP 클러스터를 찾아보세요</block>
+  <block id="49aaf65c31a811a37b2627a951f6f6d2" category="list-text"><block ref="49aaf65c31a811a37b2627a951f6f6d2" category="inline-link-rx"></block></block>
+  <block id="ff45d71e69fb5930de79de7c94326d7b" category="doc">볼륨 캐싱</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지 사항</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">법적 고지사항은 저작권 표시, 상표, 특허 등에 대한 정보를 제공합니다.</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">상표</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NETAPP, NETAPP 로고 및 NetApp 상표 페이지에 나열된 마크는 NetApp, Inc.의 상표입니다. 다른 회사 및 제품 이름은 해당 소유자의 상표일 수 있습니다.</block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">특허</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetApp 이 소유한 현재 특허 목록은 다음에서 확인할 수 있습니다.</block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">개인정보 보호정책</block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈소스</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">공지 파일은 NetApp 소프트웨어에서 사용되는 타사 저작권 및 라이선스에 대한 정보를 제공합니다.</block>
+  <block id="84fa68bdcea2ad5e54b20ac851705b19" category="summary">알려진 제한 사항은 이 서비스 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 나타냅니다.</block>
+  <block id="b0869ac252941f2bb0a66e4217373fe7" category="doc">볼륨 캐싱의 알려진 제한 사항</block>
+  <block id="b4c367fe6d90350394d4c683b14a2b68" category="section-title">캐시 내보내기 정책 규칙 복사의 제한 사항</block>
+  <block id="dfa00fa3b7488ec5be323d610b3be4c9" category="paragraph">다음과 같은 상황에서는 캐시 내보내기 정책 규칙이 캐시 볼륨에 복사되지 않습니다.</block>
+  <block id="052790f586ecc27268f7e78d289d66ec" category="list-text">소스 볼륨의 시스템이 Amazon FSx for NetApp ONTAP 또는 Cloud Volumes ONTAP 이고 캐시 볼륨이 ONTAP 9.10.1 이하인 경우입니다.</block>
+  <block id="63dfadbcf19bd5ee84631f7d0fa52f99" category="list-text">소스 볼륨의 시스템이 ONTAP 버전이고, 캐시 볼륨이 ONTAP 9.10.1 이하인 경우입니다.</block>
+  <block id="55f772a03fa49d374be9b2bcd7e6a76b" category="paragraph">해결 방법: 캐시 볼륨에 대한 규칙을 수동으로 만들어야 합니다.</block>
+  <block id="fa3ee1290aad0baa7d9f67b33fe9f498" category="section-title">동일한 이름을 가진 스토리지 VM에 대한 캐시 생성이 실패합니다.</block>
+  <block id="cdfacc99848abb76b047557a358ab3ce" category="paragraph">소스 및 대상 클러스터가 동일한 이름의 스토리지 VM을 사용하는 경우 캐시가 생성되지 않습니다.</block>
+  <block id="e5b7c58c64229256ed7ed7b7531a8fb8" category="paragraph">해결 방법: 소스 및 대상 스토리지 VM에 다른 이름을 사용합니다.</block>
+  <block id="302e36c6612d7b1f818aca18bb48cd98" category="section-title">새 내보내기 정책이나 최근 편집된 내보내기 정책 표시 지연</block>
+  <block id="5f46a75755796ecf8fe20992381241f3" category="paragraph">캐시를 생성할 때 최근에 생성되거나 편집된 내보내기 정책이 목록에 표시되지 않을 수 있습니다.</block>
+  <block id="6cd32040ccd84f982a76c0c1d708c66c" category="paragraph">해결 방법: 몇 분 후에 다시 시도하세요.</block>
+  <block id="273053fb1b487fc052d1da115c69e3cd" category="section-title">대상에 CIFS 프로토콜만 활성화된 경우 캐시 생성이 실패합니다.</block>
+  <block id="1951eec8941c43bd77fbd0a382f438c5" category="paragraph">소스 또는 대상 클러스터에 ONTAP 9.10.1 이하 버전이 있고 대상 클러스터에서 CIFS 프로토콜만 활성화된 경우 캐시 생성에 실패합니다.</block>
+  <block id="19e9fe5f7892297d60443124d55cc602" category="paragraph">해결 방법: ONTAP 9.11.1 이상을 실행하거나 CIFS 및 NFS 프로토콜이 모두 구성된 대상 클러스터를 사용합니다.</block>
+  <block id="334fb6e3ccc3d68c66ae1be5bb08809f" category="summary">볼륨 캐싱은 원격 장소에 지속적이고 쓰기 가능한 볼륨을 제공합니다.  볼륨 캐싱을 사용하면 데이터 액세스 속도를 높이거나 액세스 빈도가 높은 볼륨의 트래픽을 오프로드할 수 있습니다.  캐시 볼륨은 읽기 작업이 많은 작업, 특히 클라이언트가 동일한 데이터에 반복적으로 액세스해야 하는 경우에 이상적입니다.</block>
+  <block id="cfd3e678741802a00293f0cccac9446c" category="doc">볼륨 캐싱의 새로운 기능</block>
+  <block id="802add3126540762ef1a9360d0a57d61" category="paragraph">볼륨 캐싱의 새로운 소식을 알아보세요.</block>
+  <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">2025년 10월 6일</block>
+  <block id="a6aef5e3bbd8b059764f33a4044e30d6" category="section-title">2023년 6월 4일</block>
+  <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp 다양한 방법으로 BlueXP 에 대한 지원을 제공합니다. 지식 기반(KB) 문서와 커뮤니티 포럼 등 광범위한 무료 셀프 지원 옵션을 연중무휴 24시간 이용할 수 있습니다. 지원 등록 시 웹 티켓팅을 통한 원격 기술 지원이 제공됩니다.</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">도움을 받으세요</block>
+  <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetApp BlueXP 와 클라우드 서비스에 대한 다양한 지원을 제공합니다. 지식 베이스(KB) 문서 및 커뮤니티 포럼 등 다양한 무료 셀프 지원 옵션을 연중무휴 24시간 이용하실 수 있습니다. 지원 등록 시 웹 티켓팅을 통한 원격 기술 지원이 제공됩니다.</block>
+  <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">클라우드 공급자 파일 서비스에 대한 지원을 받으세요</block>
+  <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">클라우드 공급자 파일 서비스, 해당 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원에 대해서는 해당 제품의 BlueXP 설명서에서 "도움말 받기"를 참조하세요.</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP 용 Amazon FSx</block>
+  <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
+  <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
+  <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
+  <block id="1215f8190533dfdf63d2224a6d88266f" category="inline-link-macro">Google Cloud NetApp Volumes</block>
+  <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
+  <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">BlueXP 와 해당 스토리지 솔루션 및 서비스에 대한 구체적인 기술 지원을 받으려면 아래에 설명된 지원 옵션을 이용하세요.</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">셀프 지원 옵션 사용</block>
+  <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">다음 옵션은 주 7일, 하루 24시간 무료로 이용 가능합니다.</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">설명서</block>
+  <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">현재 보고 있는 BlueXP 문서입니다.</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">지식 기반</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">BlueXP 지식 기반을 검색하여 문제 해결에 도움이 되는 문서를 찾아보세요.</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">커뮤니티</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">현재 진행 중인 토론을 팔로우하거나 새로운 토론을 만들려면 BlueXP 커뮤니티에 가입하세요.</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">NetApp 지원을 통해 사례 만들기</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">위에 나열된 셀프 지원 옵션 외에도, 지원을 활성화한 후 NetApp 지원 전문가와 협력하여 문제를 해결할 수 있습니다.</block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="list-title">시작하기 전에</block>
+  <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">BlueXP 로그인과 관련된 자격 증명을 관리하는 방법을 알아보세요.</block>
+  <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">*사례 만들기* 기능을 사용하려면 먼저 NetApp 지원 사이트 자격 증명을 BlueXP 로그인과 연결해야 합니다.<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block> .</block>
+  <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">일련 번호가 있는 ONTAP 시스템에 대한 사례를 개설하는 경우 NSS 계정은 해당 시스템의 일련 번호와 연결되어야 합니다.</block>
+  <block id="7fe6981833e8fe7fd89e0a99a55573da" category="list-text">BlueXP 에서 *도움말 &gt; 지원*을 선택하세요.</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">*리소스* 페이지에서 기술 지원 아래에 있는 사용 가능한 옵션 중 하나를 선택하세요.</block>
+  <block id="6a1b74969231967ed071d465206b15c7" category="list-text">전화로 상담원과 통화하고 싶으시면 *전화하기*를 선택하세요. netapp.com에서 전화할 수 있는 전화번호가 나열된 페이지로 이동하게 됩니다.</block>
+  <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">NetApp 지원 전문가에게 티켓을 열려면 *사례 만들기*를 선택하세요.</block>
+  <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*서비스*: 문제와 관련된 서비스를 선택하세요. 예를 들어, BlueXP 서비스 내 워크플로나 기능에 대한 기술 지원 문제에 특화되어 있습니다.</block>
+  <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*작업 환경*: 스토리지에 해당되는 경우 * Cloud Volumes ONTAP* 또는 *온프레미스*를 선택한 다음 연관된 작업 환경을 선택합니다.</block>
+  <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">작업 환경 목록은 서비스의 상단 배너에서 선택한 BlueXP 조직(또는 계정), 프로젝트(또는 작업 공간) 및 커넥터의 범위 내에 있습니다.</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*사례 우선순위*: 낮음, 보통, 높음 또는 중요로 사례의 우선순위를 선택합니다.</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">이러한 우선순위에 대한 자세한 내용을 알아보려면 필드 이름 옆에 있는 정보 아이콘 위에 마우스를 올려놓으세요.</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*문제 설명*: 해당 오류 메시지나 수행한 문제 해결 단계를 포함하여 문제에 대한 자세한 설명을 제공하세요.</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*추가 이메일 주소*: 이 문제를 다른 사람에게 알리려면 추가 이메일 주소를 입력하세요.</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*첨부파일(선택사항)*: 최대 5개의 첨부파일을 한 번에 하나씩 업로드하세요.</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">첨부파일은 파일당 25MB로 제한됩니다. 다음 파일 확장자가 지원됩니다: txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx, csv.</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">NetApp 지원팀에 사례를 생성할 수 있는 사례 생성 양식의 스크린샷입니다.</block>
+  <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">당신이 완료한 후</block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">지원 사례 번호가 포함된 팝업이 나타납니다. NetApp 지원 전문가가 귀하의 사례를 검토하고 곧 연락드릴 것입니다.</block>
+  <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">지원 사례 기록을 보려면 *설정 &gt; 타임라인*을 선택하고 "지원 사례 만들기"라는 이름의 작업을 찾으세요. 가장 오른쪽에 있는 버튼을 누르면 동작을 확장하여 자세한 내용을 볼 수 있습니다.</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">사례를 생성하려고 할 때 다음과 같은 오류 메시지가 나타날 수 있습니다.</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"선택한 서비스에 대해 사례를 생성할 권한이 없습니다."</block>
+  <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">이 오류는 NSS 계정과 해당 계정과 연결된 기록상 회사가 BlueXP 계정 일련 번호에 대한 기록상 회사와 동일하지 않다는 것을 의미할 수 있습니다(예: 960xxxx) 또는 작업 환경 일련 번호. 다음 옵션 중 하나를 사용하여 도움을 요청할 수 있습니다.</block>
+  <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">제품 내 채팅을 사용하세요</block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">비기술적 사례를 제출하세요<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">지원 사례 관리(미리 보기)</block>
+  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">BlueXP 에서 직접 활성화된 지원 사례와 해결된 지원 사례를 보고 관리할 수 있습니다. 귀하의 NSS 계정 및 회사와 관련된 사례를 관리할 수 있습니다.</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">사례 관리 기능은 미리 보기로 제공됩니다. 우리는 이 경험을 더욱 개선하고 향후 릴리스에서 향상된 기능을 추가할 계획입니다. 제품 내 채팅을 이용해 피드백을 보내주세요.</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">다음 사항에 유의하세요.</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">페이지 상단의 사례 관리 대시보드는 두 가지 보기를 제공합니다.</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">왼쪽 보기는 귀하가 제공한 NSS 계정 사용자에 의해 지난 3개월 동안 열린 총 사례를 보여줍니다.</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">오른쪽 보기는 사용자 NSS 계정을 기준으로 지난 3개월 동안 회사 수준에서 열린 총 사례를 보여줍니다.</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">표의 결과는 귀하가 선택한 보기와 관련된 사례를 반영합니다.</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">관심 있는 열을 추가하거나 제거할 수 있으며, 우선순위 및 상태와 같은 열의 내용을 필터링할 수 있습니다. 다른 열은 정렬 기능만 제공합니다.</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">자세한 내용은 아래 단계를 참조하세요.</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">사례별로 사례 메모를 업데이트하거나 아직 닫힘 또는 닫힘 보류 상태가 아닌 사례를 닫는 기능을 제공합니다.</block>
+  <block id="0a4050ac39772e9281a9aba225254bf8" category="list-text">*사례 관리*를 선택하고 메시지가 표시되면 BlueXP 에 NSS 계정을 추가합니다.</block>
+  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">*사례 관리* 페이지는 BlueXP 사용자 계정과 연결된 NSS 계정과 관련된 미해결 사례를 보여줍니다. 이는 *NSS 관리* 페이지 상단에 표시되는 NSS 계정과 동일합니다.</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">필요에 따라 표에 표시되는 정보를 수정합니다.</block>
+  <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">*조직 사례*에서 *보기*를 선택하면 회사와 관련된 모든 사례를 볼 수 있습니다.</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">정확한 날짜 범위를 선택하거나 다른 기간을 선택하여 날짜 범위를 수정하세요.</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">케이스 관리 페이지의 표 위에 있는 옵션의 스크린샷으로, 이를 통해 정확한 날짜 범위나 지난 7일, 30일 또는 3개월을 선택할 수 있습니다.</block>
+  <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">열의 내용을 필터링합니다.</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">활성 또는 닫힘과 같은 특정 상태와 일치하는 사례를 필터링할 수 있는 상태 열의 필터 옵션 스크린샷입니다.</block>
+  <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">표에 나타나는 플러스 아이콘</block>
+  <block id="cdf14d2156528231a5dbd12ad5c95d3f" category="list-text">표에 나타나는 열을 변경하려면 다음을 선택하세요.<block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> 그런 다음 표시하려는 열을 선택합니다.</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">표에 표시할 수 있는 열을 보여주는 스크린샷입니다.</block>
+  <block id="e65065c4fd326b9f3a1eeb9453c30d73" category="paragraph"><block ref="e65065c4fd326b9f3a1eeb9453c30d73" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">표의 마지막 열에 나타나는 세 개의 점이 있는 아이콘</block>
+  <block id="348552521b849746260fe8d296d34c15" category="list-text">기존 사례를 관리하려면 다음을 선택하세요.<block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> 그리고 사용 가능한 옵션 중 하나를 선택하세요:</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*사례 보기*: 특정 사례에 대한 전체 세부 정보를 확인하세요.</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*사례 메모 업데이트*: 문제에 대한 추가 세부 정보를 제공하거나 *파일 업로드*를 선택하여 최대 5개의 파일을 첨부하세요.</block>
+  <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*사건 종결*: 사건을 종결하는 이유를 자세히 입력하고 *사건 종결*을 선택하세요.</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">표의 마지막 열에 있는 메뉴를 선택한 후 취할 수 있는 작업을 보여주는 스크린샷입니다.</block>
+  <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="243263104c829e77835d632f591230d5" category="summary">NetApp 기술 지원팀에 지원 사례를 개설하려면 먼저 BlueXP 에 NetApp 지원 사이트 계정을 추가한 다음 지원을 위해 등록해야 합니다.</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">지원 등록</block>
+  <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">BlueXP 와 해당 스토리지 솔루션 및 서비스에 대한 기술 지원을 받으려면 지원 등록이 필요합니다. Cloud Volumes ONTAP 시스템의 주요 워크플로를 활성화하려면 지원 등록도 필요합니다.</block>
+  <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">지원에 등록해도 클라우드 공급자 파일 서비스에 대한 NetApp 지원은 제공되지 않습니다. 클라우드 공급자 파일 서비스, 해당 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원에 대해서는 해당 제품의 BlueXP 설명서에서 "도움말 받기"를 참조하세요.</block>
+  <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">지원 등록 개요</block>
+  <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">지원 자격을 활성화하기 위한 등록 방법은 두 가지가 있습니다.</block>
+  <block id="29360bfcdbc91d3f1514c372b4585965" category="list-text">BlueXP 계정 일련 번호를 등록합니다( BlueXP 의 지원 리소스 페이지에 있는 20자리 960xxxxxxxxx 일련 번호).</block>
+  <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">이는 BlueXP 내의 모든 서비스에 대한 단일 지원 구독 ID 역할을 합니다. 각 BlueXP 계정 수준 지원 구독을 등록해야 합니다.</block>
+  <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">클라우드 공급업체의 마켓플레이스에서 구독과 관련된 Cloud Volumes ONTAP 일련 번호를 등록합니다(20자리 909201xxxxxxxx 일련 번호).</block>
+  <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">이러한 일련 번호는 일반적으로 _PAYGO 일련 번호_라고 하며 Cloud Volumes ONTAP 배포 시 BlueXP 에서 생성됩니다.</block>
+  <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">두 가지 유형의 일련 번호를 모두 등록하면 지원 티켓 개설 및 자동 사례 생성과 같은 기능을 사용할 수 있습니다. 아래 설명된 대로 BlueXP 에 NetApp 지원 사이트(NSS) 계정을 추가하여 등록을 완료합니다.</block>
+  <block id="444b74bc81e823cc1c4c704219ad8ed3" category="section-title">NetApp 지원을 위해 BlueXP 등록</block>
+  <block id="b3bf31f8a918c712f26cdf493a908825" category="paragraph">지원을 등록하고 지원 자격을 활성화하려면 BlueXP 조직(또는 계정)의 한 사용자가 NetApp 지원 사이트 계정을 BlueXP 로그인과 연결해야 합니다. NetApp 지원에 등록하는 방법은 NetApp 지원 사이트(NSS) 계정이 있는지 여부에 따라 달라집니다.</block>
+  <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">NSS 계정이 있는 기존 고객</block>
+  <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">NSS 계정이 있는 NetApp 고객이라면 BlueXP 통해 지원을 받기 위해 등록하기만 하면 됩니다.</block>
+  <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">BlueXP 콘솔의 오른쪽 상단에서 설정 아이콘을 선택하고 *자격 증명*을 선택합니다.</block>
+  <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">*사용자 자격 증명*을 선택하세요.</block>
+  <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">*NSS 자격 증명 추가*를 선택하고 NetApp 지원 사이트(NSS) 인증 프롬프트를 따릅니다.</block>
+  <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">등록 과정이 성공적으로 완료되었는지 확인하려면 도움말 아이콘을 선택하고 *지원*을 선택하세요.</block>
+  <block id="2ba7f9eae7a02f9c3ac0fc07517d1c48" category="paragraph">*리소스* 페이지에는 귀하의 BlueXP 조직이 지원을 위해 등록되어 있다는 것이 표시되어야 합니다.</block>
+  <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">계정 일련번호, 녹색 확인란, 지원 등록이라는 텍스트가 표시된 스크린샷입니다.</block>
+  <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c05e530d1466e986d570cfe3f92656c3" category="paragraph">다른 BlueXP 사용자는 NetApp 지원 사이트 계정을 BlueXP 로그인과 연결하지 않은 경우 이와 동일한 지원 등록 상태를 볼 수 없습니다. 하지만 그렇다고 해서 BlueXP 조직이 지원에 등록되지 않았다는 의미는 아닙니다. 조직 내 한 명의 사용자가 이러한 단계를 따랐다면 귀하의 조직은 등록된 것입니다.</block>
+  <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">기존 고객이지만 NSS 계정이 없습니다.</block>
+  <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">기존 라이선스와 일련 번호는 있지만 NSS 계정이 없는 기존 NetApp 고객인 경우 NSS 계정을 만들고 BlueXP 로그인과 연결해야 합니다.</block>
+  <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp 지원 사이트 사용자 등록 양식</block>
+  <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">다음을 완료하여 NetApp 지원 사이트 계정을 만드십시오.<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
+  <block id="d61c9f72493817776f392db42ac446a2" category="list-text">일반적으로 * NetApp 고객/최종 사용자*인 적절한 사용자 수준을 선택하세요.</block>
+  <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">위에 사용된 BlueXP 계정 일련번호(960xxxx)를 일련번호 필드에 꼭 복사해 두세요. 이렇게 하면 계정 처리가 빨라집니다.</block>
+  <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">다음 단계를 완료하여 새 NSS 계정을 BlueXP 로그인과 연결하세요.<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> .</block>
+  <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp 의 새로운 기능</block>
+  <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">NetApp 처음 사용하시고 NSS 계정이 없으신 경우 아래의 각 단계를 따르세요.</block>
+  <block id="d889e6e7cc4c5509ab5b37f8fc894e46" category="list-text">BlueXP 콘솔의 오른쪽 상단에서 도움말 아이콘을 선택하고 *지원*을 선택하세요.</block>
+  <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">지원이 첫 번째 옵션으로 나열된 도움말 메뉴의 스크린샷</block>
+  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">지원 등록 페이지에서 계정 ID 일련 번호를 찾으세요.</block>
+  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp 지원 등록 사이트</block>
+  <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">로 이동<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> *저는 등록된 NetApp 고객이 아닙니다*를 선택하세요.</block>
+  <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">필수 입력란(빨간색 별표가 있는 항목)을 작성해 주세요.</block>
+  <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">*제품군* 필드에서 *클라우드 관리자*를 선택한 다음 해당 청구 제공자를 선택하세요.</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">위의 2단계에서 계정 일련번호를 복사하고 보안 검사를 완료한 다음 NetApp의 글로벌 데이터 개인정보 보호정책을 읽었는지 확인하세요.</block>
+  <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">이 안전한 거래를 마무리하기 위해 제공된 사서함으로 이메일이 즉시 전송됩니다. 몇 분 안에 인증 이메일이 도착하지 않으면 스팸 폴더를 확인하세요.</block>
+  <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">이메일 내에서 작업을 확인하세요.</block>
+  <block id="201080500e946070a2e4873042507c77" category="paragraph">확인을 클릭하면 귀하의 요청이 NetApp 에 ​​제출되고 NetApp 지원 사이트 계정을 만드는 것이 좋습니다.</block>
+  <block id="a2454703f88e5bf5b433ae850a87151b" category="list-text">위에 사용된 계정 일련번호(960xxxx)를 일련번호 필드에 꼭 복사해 두세요. 이렇게 하면 처리 속도가 빨라집니다.</block>
+  <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">이 과정에서 NetApp 귀하에게 연락을 드릴 것입니다. 이는 신규 사용자를 대상으로 한 일회성 온보딩 과정입니다.</block>
+  <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">NetApp 지원 사이트 계정이 있으면 아래 단계를 완료하여 계정을 BlueXP 로그인과 연결하세요.<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> .</block>
+  <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">Cloud Volumes ONTAP 지원을 위한 NSS 자격 증명 연결</block>
+  <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">Cloud Volumes ONTAP 에 대한 다음과 같은 주요 워크플로를 활성화하려면 NetApp 지원 사이트 자격 증명을 BlueXP 조직과 연결해야 합니다.</block>
+  <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">지원을 위해 Pay-as-you-go Cloud Volumes ONTAP 시스템 등록</block>
+  <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">시스템 지원을 활성화하고 NetApp 기술 지원 리소스에 액세스하려면 NSS 계정을 제공해야 합니다.</block>
+  <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">BYOL(Bring Your Own License)을 사용할 때 Cloud Volumes ONTAP 배포</block>
+  <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">BlueXP 귀하의 라이선스 키를 업로드하고 귀하가 구매한 기간 동안 구독을 활성화하려면 귀하의 NSS 계정을 제공하는 것이 필요합니다. 여기에는 기간 갱신을 위한 자동 업데이트가 포함됩니다.</block>
+  <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Cloud Volumes ONTAP 소프트웨어를 최신 릴리스로 업그레이드</block>
+  <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">NSS 자격 증명을 BlueXP 조직에 연결하는 것은 BlueXP 사용자 로그인에 연결된 NSS 계정과 다릅니다.</block>
+  <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">이러한 NSS 자격 증명은 특정 BlueXP 조직 ID와 연결됩니다. BlueXP 조직에 속한 사용자는 *지원 &gt; NSS 관리*에서 이러한 자격 증명에 액세스할 수 있습니다.</block>
+  <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">고객 수준 계정이 있는 경우 하나 이상의 NSS 계정을 추가할 수 있습니다.</block>
+  <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">파트너 또는 리셀러 계정이 있는 경우 하나 이상의 NSS 계정을 추가할 수 있지만 고객 수준 계정과 함께 추가할 수는 없습니다.</block>
+  <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">*NSS 관리 &gt; NSS 계정 추가*를 선택하세요.</block>
+  <block id="85b9386ed443776127e099931d73448a" category="list-text">메시지가 표시되면 *계속*을 선택하여 Microsoft 로그인 페이지로 리디렉션됩니다.</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp 지원 및 라이선싱에 특화된 인증 서비스를 위한 ID 공급자로 Microsoft Entra ID를 사용합니다.</block>
+  <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">로그인 페이지에서 NetApp 지원 사이트에 등록된 이메일 주소와 비밀번호를 입력하여 인증 과정을 진행합니다.</block>
+  <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">이러한 작업을 통해 BlueXP 라이선스 다운로드, 소프트웨어 업그레이드 확인, 향후 지원 등록과 같은 작업에 NSS 계정을 사용할 수 있습니다.</block>
+  <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSS 계정은 고객 수준 계정이어야 합니다(게스트나 임시 계정이어서는 안 됩니다). 여러 개의 고객 수준 NSS 계정을 가질 수 있습니다.</block>
+  <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">해당 계정이 파트너 수준 계정인 경우 NSS 계정은 하나만 있을 수 있습니다. 고객 수준 NSS 계정을 추가하려고 하는데 파트너 수준 계정이 이미 있는 경우 다음과 같은 오류 메시지가 표시됩니다.</block>
+  <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">"이 계정에는 다른 유형의 NSS 사용자가 이미 있으므로 NSS 고객 유형이 허용되지 않습니다."</block>
+  <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">기존 고객 수준 NSS 계정이 있고 파트너 수준 계정을 추가하려는 경우에도 마찬가지입니다.</block>
+  <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">로그인에 성공하면 NetApp NSS 사용자 이름을 저장합니다.</block>
+  <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">세 개의 수평 점으로 구성된 아이콘</block>
+  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">이는 귀하의 이메일에 매핑되는 시스템 생성 ID입니다. *NSS 관리* 페이지에서 이메일을 표시할 수 있습니다.<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
+  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">로그인 자격 증명 토큰을 새로 고쳐야 하는 경우 *자격 증명 업데이트* 옵션도 있습니다.<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
+  <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">이 옵션을 사용하면 다시 로그인하라는 메시지가 표시됩니다. 이 계정의 토큰은 90일 후에 만료됩니다. 이에 대한 알림이 게시됩니다.</block>
+  <block id="cb949e5e30304d14de6d1ee56dcd3973" category="doc">볼륨 캐싱을 사용하여 캐시 만들기</block>
+  <block id="c83432b66d6c3940b6259b90efd83298" category="paragraph">볼륨 캐싱은 원격 장소에 지속적이고 쓰기 가능한 볼륨을 제공합니다.  볼륨 캐싱을 사용하면 데이터 액세스 속도를 높이거나 액세스 빈도가 높은 볼륨의 트래픽을 오프로드할 수 있습니다.  캐시된 볼륨은 읽기 작업이 많은 작업에 적합하며, 특히 클라이언트가 동일한 데이터에 반복적으로 액세스해야 하는 경우에 적합합니다.  소스 시스템의 하나 이상의 소스 볼륨을 캐시 소스로 사용하여 Amazon FSx for ONTAP, Cloud Volumes ONTAP 및 온프레미스 ONTAP 간에 볼륨 캐싱을 생성할 수 있습니다.  그런 다음 캐시 볼륨에 대한 스토리지 가상 머신을 선택합니다.</block>
+  <block id="169359b747a97bfd7be9db6b4d0d4205" category="paragraph">캐시된 볼륨은 소스 볼륨과 동일한 클러스터에 있을 수도 있고 다른 클러스터에 있을 수도 있습니다.  캐시하기로 선택한 볼륨은 동일한 스토리지 VM에 속해야 하며, 스토리지 VM은 동일한 프로토콜을 사용해야 합니다.</block>
+  <block id="40d1cd0fd7b32697fca346c77e81cf33" category="admonition">캐싱에 적합하지 않은 볼륨은 회색으로 표시되어 선택할 수 없습니다.</block>
+  <block id="84c72eda7eeb786f006b0900a7567aaa" category="paragraph">캐시된 볼륨의 크기를 소스 볼륨 크기의 백분율로 입력할 수 있습니다.</block>
+  <block id="597e414794682881f404bfa784ae39ec" category="admonition">캐시된 볼륨에서 사용하는 IPSpace는 소스 스토리지 VM에서 사용하는 IPSpace에 따라 달라집니다.</block>
+  <block id="517fe4990606388caa9919da8eec995a" category="paragraph">캐시된 볼륨 이름은 접미사를 사용합니다.<block ref="2688da00ef40aea51d0332942162f4a3" prefix=" " category="inline-code"></block> 원래 볼륨 이름에 추가되었습니다.</block>
+  <block id="da3e6c365dbf585e680eb8b81eca08c1" category="section-title">볼륨 캐싱 랜딩 페이지의 단계</block>
+  <block id="83046549bdfbacafb1888d0467d8acc4" category="list-text">NetApp 콘솔에 로그인합니다.</block>
+  <block id="c0e9cf3396419d44afe6a2a9716d16ce" category="list-text">왼쪽 탐색에서 *모바일* &gt; *볼륨 캐싱*을 선택합니다.</block>
+  <block id="d76534bd050ff0fb764f735590f47e67" category="paragraph">볼륨 캐싱 대시보드 페이지로 이동합니다.  볼륨 캐싱 옵션을 처음 사용하는 경우 캐시 정보를 추가해야 합니다.  나중에 대시보드가 나타나 캐시에 대한 데이터를 표시합니다.</block>
+  <block id="33022033ab6ef074831b51e61f9f7279" category="inline-link">NetApp 콘솔 빠른 시작</block>
+  <block id="612e60a0d9bf1ad494a1c96d0cfbb20b" category="admonition">아직 NetApp 콘솔 에이전트를 설정하지 않은 경우 *캐시 추가* 대신 *콘솔 에이전트 추가* 옵션이 나타납니다.  이 경우 먼저 콘솔 에이전트를 설정해야 합니다.  를 참조하세요<block ref="4af1c1682eadbae660c367784adca2e0" category="inline-link-rx"></block> .</block>
+  <block id="6eadae9a38db2a500243d05cf7225e2e" category="inline-image-macro">볼륨 캐싱을 위한 랜딩 페이지</block>
+  <block id="382f9d7006d270e738cb792422ddc921" category="paragraph"><block ref="382f9d7006d270e738cb792422ddc921" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b6818d152d5cb9dea3c8907b154bd8a8" category="list-text">*캐시 추가*를 선택하세요.</block>
+  <block id="9a4dcefe0ee384ac688c636910b45efa" category="list-text">캐시 데이터 페이지에서 시스템 소스 및 대상 캐시를 선택하고 *캐싱 마법사 시작*을 선택합니다.</block>
+  <block id="9e0cbc47bdb380a02c337c21c69cdc2b" category="list-text">캐시 구성 페이지에서 캐시하려는 볼륨을 선택합니다.</block>
+  <block id="09fd28ad516783a6436e73dab10d6a64" category="admonition">최대 50권까지 선택할 수 있습니다.</block>
+  <block id="ec2f9f6a3579c539c02d2b9771c2e706" category="list-text">VM 세부 정보나 볼륨 크기를 추가로 변경하려면 페이지를 아래로 스크롤하세요.</block>
+  <block id="9ed9532712efe61b4d49f6ee57e4e286" category="list-text">소스 볼륨 크기에 대한 백분율로 캐시 볼륨 크기를 입력합니다.</block>
+  <block id="3e6ea85d3cbf80a51076780cb179a997" category="admonition">경험에 따르면 캐시 볼륨 크기는 소스 볼륨 크기의 약 15%가 되어야 합니다.</block>
+  <block id="5af43b0eab69da24bc5edcd7ac5f1937" category="list-text">*캐시 액세스* 상자를 선택하여 NFS 내보내기 정책 규칙과 SMB/CIFS 공유 구성을 소스 볼륨에서 대상 캐시 볼륨으로 복제합니다.</block>
+  <block id="c21540a74f6806b42af13022fc111de8" category="paragraph">그러면 소스 볼륨의 NFS 내보내기 정책 규칙과 SMB/CIFS 공유가 캐시 볼륨에 복제됩니다.  캐시 스토리지 VM에서 SMB/CIFS 프로토콜이 활성화되어 있지 않으면 SMB/CIFS 공유가 복제되지 않습니다.</block>
+  <block id="220be7f31b8f92d82ed95eaf85ccf0ec" category="list-text">선택적으로 캐시 이름 접두사를 입력합니다.</block>
+  <block id="6b9f55d4a5933f878016b2b86fd6cd1b" category="paragraph">접미사의<block ref="2688da00ef40aea51d0332942162f4a3" prefix=" " category="inline-code"></block> 이름에 다음 형식이 추가됩니다.<block ref="edd672ffe3522f8c8dfc35e6b57e3ae7" prefix=" " category="inline-code"></block></block>
+  <block id="152c1205ce3ae813313f8a14cf8eb321" category="list-text">*캐시 만들기*를 선택하세요.</block>
+  <block id="fda3cce0ad94905cc7b862e48ea5b42f" category="paragraph">새로운 캐시가 캐싱 목록에 나타납니다.  캐시 볼륨 이름이 표시됩니다.<block ref="2688da00ef40aea51d0332942162f4a3" prefix=" " category="inline-code"></block> 소스 볼륨 이름의 접미사로 사용됩니다.</block>
+  <block id="1a594c580595e3ee20d748a365fef6b2" category="list-text">작업 진행 상황을 보려면 NetApp 콘솔 메뉴에서 *관리* &gt; *감사*를 선택하세요.</block>
+  <block id="8269bed4632d147abc4be61b23aac8cf" category="section-title">NetApp 콘솔 시스템 페이지의 단계</block>
+  <block id="01287fab159faf3ef13872bbbba03167" category="list-text">NetApp 콘솔 시스템 페이지에서 작업 환경을 선택합니다.</block>
+  <block id="2988cd54e7f1bab926c1e27b0d343509" category="inline-image-macro">캐시를 생성하기 위한 드래그 앤 드롭 기능</block>
+  <block id="611242e7b2f5e67d2d0f069f8b963154" category="list-text">소스 시스템을 선택하여 대상 위치로 드래그합니다.<block ref="43270a96c615e76b6743757f308ade69" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d85bdc4472b38b29e128ffbb6d19168e" category="list-text">*볼륨 캐싱*을 선택하세요.</block>
+  <block id="eb3419d769eb00d7ba2ca8edb7c0e426" category="paragraph">이렇게 하면 소스에서 대상까지 캐시 볼륨이 생성됩니다.</block>
+  <block id="8d7482a9da637c0f0bd4285bb630335c" category="list-text">오른쪽 창의 캐싱 옵션 상자에서 *추가*를 선택합니다.</block>
+  <block id="73e208b68018b847762d82de940a4e26" category="inline-image-macro">캐시 데이터 팝업</block>
+  <block id="9da3caf8f0b3db72ac3ea62b14519fc6" category="list-text">캐시 데이터 페이지에서 캐시하려는 시스템을 선택하고 *캐시 마법사 시작*을 선택합니다.<block ref="d510d73c5ccacdf7416f6e10c36fb683" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5c334f4127a136baabcc22d3670432c3" category="inline-image-macro">캐시 추가 창</block>
+  <block id="a634ad960f381760e39578135c141f12" category="paragraph"><block ref="a634ad960f381760e39578135c141f12" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="666d3c7d6ea7cfc7ea6e6e6faed1cdd3" category="doc">캐시 관리</block>
+  <block id="fc66df463880523a60b999aff387392a" category="paragraph">캐시를 편집하고, 내보내기 정책을 변경하고, 캐시 크기를 조정하고, 캐시를 삭제할 수 있습니다.</block>
+  <block id="8068c771c79b687b4eb16a0852ccf0b4" category="paragraph">볼륨 캐싱을 사용하면 다음과 같은 목표를 달성할 수 있습니다.</block>
+  <block id="00ac51c16cde551605ec6cf0d3b91416" category="list-text">캐시 세부 정보를 확인하세요.</block>
+  <block id="06fc18e5e4898299f1a818098e8e94c7" category="list-text">캐시에 다른 내보내기 정책을 할당합니다.</block>
+  <block id="8ba82ac05e167f153ba79532f2f1980a" category="list-text">볼륨 캐싱을 편집하고 크기 등을 변경합니다. 편집에서는 다른 속성을 보고 변경할 수 있는 옵션이 제공되며, 향후 릴리스에서는 편집에 더 많은 속성이 추가될 예정입니다.</block>
+  <block id="b8c0701847f6b5a25da10d75bdbcba97" category="list-text">원래 볼륨 크기의 백분율을 기준으로 기존 캐시의 크기를 조정합니다.</block>
+  <block id="e33b91d9e0fc1cfb3b1e4c432687e47d" category="list-text">캐시를 삭제합니다.</block>
+  <block id="eed3d8fba58a64cd23112120a6117455" category="section-title">캐시 세부 정보 보기</block>
+  <block id="5c69ebc5320400eed666c78803db34a8" category="paragraph">각 캐싱에 대해 원래 볼륨, 작업 환경, 캐시 볼륨 등을 볼 수 있습니다.</block>
+  <block id="5956b4d692699189d6894540b730139f" category="list-text">NetApp 콘솔 왼쪽 탐색에서 *모빌리티* &gt; *볼륨 캐싱*을 선택합니다.</block>
+  <block id="f8e53fb165d8b7a3831ce2aa7d4e77f6" category="paragraph">대상 시스템에 생성된 캐시 볼륨 목록을 볼 수 있습니다.  캐시 목록에는 캐시 세부 정보가 표시됩니다.</block>
+  <block id="02cefd577af8481ee671be4f9195bbaa" category="list-text">목록을 필터링하려면 *필터 기준 +* 옵션을 선택하세요.</block>
+  <block id="c9897a728d224b1031a3e8b6c1f025ae" category="list-text">행을 선택하고 오른쪽에 있는 *작업…* 옵션을 선택하세요.</block>
+  <block id="714df0afd8067aa43e79041c239c6f08" category="list-text">*세부정보 보기 및 편집*을 선택하세요.</block>
+  <block id="d120091c5d384d26aa6d9f90d1401035" category="list-text">자세한 내용을 검토하세요.</block>
+  <block id="5b783fc58734a11a740b6e1e60e08d60" category="section-title">캐시 편집</block>
+  <block id="5de1639bcf1d9741c547ce9e690a7ea1" category="paragraph">캐시의 이름, 볼륨 크기 및 내보내기 정책을 변경할 수 있습니다.</block>
+  <block id="feed808375e6b93e924213348d6e1b33" category="list-text">기본 구성 탭에서 원하는 경우 캐시 이름과 캐시 볼륨 크기를 변경합니다.</block>
+  <block id="f3bd519b868da90fe41b12102022d728" category="list-text">선택적으로 캐시 액세스 탭을 확장하고 다음 값을 수정합니다.</block>
+  <block id="4224fae747c5197aa6015f2364e1af12" category="list-text">마운트 경로.</block>
+  <block id="77cf0358c33e9b52d8fd3920268e696c" category="list-text">기존과 다른 수출 정책.</block>
+  <block id="fe33f2f773b6f4f6c83f89169f7da415" category="list-text">SMB/CIFS 공유 세부 정보나 내보내기 정책 규칙을 변경하려면 해당 옵션을 클릭하여 NetApp System Manager에 액세스하세요.</block>
+  <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">*저장*을 선택하세요.</block>
+  <block id="e48096df97c7e7e77282b4b97ee9bd9a" category="section-title">다른 캐시 내보내기 정책 할당</block>
+  <block id="4635bd9ae5cb389a0305a6b8455fa215" category="paragraph">캐시에 다른 내보내기 정책을 할당할 수 있습니다.</block>
+  <block id="55d1d3e519ab62ebe0a1babb50ae6d72" category="paragraph">소스 내보내기 정책 규칙은 대상 클러스터에 적용되어야 합니다.</block>
+  <block id="e7ce5893a6e3bdd09c32da72f9a3c69e" category="admonition">기존 내보내기 정책을 캐시에 할당할 수 있습니다.  수출 정책 규칙을 변경할 수 없습니다.  내보내기 정책을 변경해야 하는 경우 NetApp System Manager를 사용할 수 있습니다.</block>
+  <block id="4d418cdd8812dfcb356166d6eaf269f7" category="list-text">*수출 정책 변경*을 선택합니다.</block>
+  <block id="b580ca1414e0a945196190cbfbc1f75d" category="list-text">캐시에 할당할 내보내기 정책을 선택하세요.</block>
+  <block id="3085df87f3cd191beb32cd249232f641" category="section-title">캐시 크기 조정</block>
+  <block id="31bb5882b51789d8ff23370b949a73ec" category="paragraph">소스 볼륨의 백분율에 따라 캐시 볼륨의 크기를 변경할 수 있습니다.</block>
+  <block id="782635f18c9a4c6e77f10be3b478b27a" category="list-text">*크기 조정*을 선택하세요.</block>
+  <block id="c108e3ea3f3ec7a419ec6372a3325d79" category="list-text">원본 볼륨 크기의 새로운 백분율을 입력하세요.</block>
+  <block id="423f18c1cd7d2cab76c65e9cbd30b5d2" category="paragraph">캐시 볼륨은 새로운 백분율로 크기가 조정됩니다.</block>
+  <block id="8d4c7677b103c84ac6a97f6e946f6380" category="paragraph">캐시가 더 이상 필요하지 않으면 삭제할 수 있습니다.  이렇게 하면 볼륨 캐싱 관계가 삭제되고 대상 볼륨 캐시가 삭제됩니다.</block>
+  <block id="0f024621e0673f1f4e657983682d6e72" category="list-text">*삭제*를 선택하세요.</block>
+  <block id="9b4532069e9bc4e1de3c019493dc5ee0" category="list-text">상자를 체크하세요.</block>
+  <block id="ee3a3db0422831681fcef5898b4dd24f" category="doc">볼륨 캐싱 개요 사용</block>
+  <block id="a73bc81b4418cad7550381063b8d4d32" category="paragraph">볼륨 캐싱을 사용하면 다음과 같은 목표를 달성할 수 있습니다.</block>
+  <block id="086ae240dc59a72dee947da562cf17da" category="list-text"><block ref="638e664503cbc2b4d03651ad48f065e4" category="inline-link-macro-rx"></block> .</block>
+  <block id="57eaca7fde0d682a5f4bb1194791b589" category="inline-link-macro">내보내기 정책 변경 및 캐시 크기 조정</block>
+  <block id="403db9049e8fc74fb1c958367db6cfab" category="list-text"><block ref="63c74ca1cdc9ec0d7fd9f52c97b2e161" category="inline-link-macro-rx"></block> .</block>
+  <block id="2d2bb0bd1efc96e65cb6deaedc742c41" category="list-text"><block ref="58044a3c76af89738ba5bad3bbf696eb" category="inline-link-macro-rx"></block> .</block>
+  <block id="158812c8336b1e3bf3dba3a26e130f17" category="list-text"><block ref="1f92bc5779f2f7dc3b853d4a9f3506c9" category="inline-link-macro-rx"></block>NetApp 콘솔 감사 페이지에서.</block>
+  <block id="08f83993cc2b93af6175018abeb278b0" category="summary">볼륨 캐싱은 원격 장소에 지속적이고 쓰기 가능한 볼륨을 제공합니다.  NetApp 볼륨 캐싱을 사용하면 데이터 액세스 속도를 높이거나 액세스 빈도가 높은 볼륨의 트래픽을 오프로드할 수 있습니다.  캐시 볼륨은 읽기 작업이 많은 작업, 특히 클라이언트가 동일한 데이터에 반복적으로 액세스해야 하는 경우에 이상적입니다.</block>
+  <block id="a047d92e042b55157df7f9db9b86d574" category="doc">감사 페이지에서 볼륨 캐싱 작업 모니터링</block>
+  <block id="33c59f81102abcd6c4195719b1b7d1d3" category="paragraph">NetApp 콘솔 감사 페이지를 사용하여 모든 볼륨 캐싱 작업을 모니터링하고 진행 상황을 확인할 수 있습니다.</block>
+  <block id="da27a3a4029fc8a5d227b9d73327f99d" category="list-text">NetApp 콘솔 메뉴에서 *관리* &gt; *감사*를 선택합니다.</block>
+  <block id="cb7056f588b57ee15c8c6aa56fe4dd4a" category="list-text">선택적으로 시간, 서비스, 작업, 에이전트, 리소스, 사용자 또는 상태별로 필터링할 수 있습니다.</block>
+  <block id="98f385a388036a7afb371f84cd26bc12" category="list-text">모든 캐시와 작업을 탐색해 보세요.</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하기</block>
+  <block id="5afe8b22b287efe43609aa6085efd740" category="sidebar">볼륨 캐싱의 새로운 기능</block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">빠른 시작</block>
+  <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="sidebar">필수 조건</block>
+  <block id="32298021301a69db3766a4f82422d5f1" category="sidebar">볼륨 캐싱 옵션에 액세스</block>
+  <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">자주 묻는 질문</block>
+  <block id="6794961c24c959bbc17a00b15f547b94" category="sidebar">볼륨 캐싱 사용</block>
+  <block id="27688625d4bfcc77f4f9313d701cbb7d" category="sidebar">볼륨 캐싱 작업 모니터링</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 및 커뮤니티</block>
+  <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp 데이터 서비스</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
+  <block id="c46d8c9c80eb4644795b791069b82911" category="sidebar">볼륨 캐싱 문서</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 노트</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">새로운 소식</block>
+  <block id="482723983a4f2af954e36ff41e567451" category="sidebar">알려진 제한 사항</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">지식과 지원</block>
+</blocks>

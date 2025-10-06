@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: get-started/cache-login.html 
+keywords: bluexp login, volume caching log in 
+summary: NetApp 콘솔에서 서비스에 액세스하여 볼륨 캐싱을 시작하세요. 
+---
+= 볼륨 캐싱 액세스
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp 콘솔을 사용하여 볼륨 캐싱 옵션에 액세스합니다.
+
+NetApp 콘솔에 로그인하려면 NetApp 지원 사이트 자격 증명을 사용할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["로그인에 대해 자세히 알아보세요"^] .
+
+.단계
+. 웹 브라우저를 열고 이동하세요 https://console.netapp.com/["NetApp 콘솔"^] .
++
+NetApp 콘솔 로그인 페이지가 나타납니다.
+
+. 콘솔에 로그인합니다.
+. 콘솔 왼쪽 탐색에서 *모빌리티* > *볼륨 캐싱*을 선택합니다.
++
+볼륨 캐싱 대시보드가 나타납니다.image:landing-page.png["볼륨 캐싱을 위한 랜딩 페이지 이미지"]
+
++
+
+NOTE: 콘솔 에이전트가 설정되어 있지 않으면 *콘솔 에이전트 추가* 옵션이 나타납니다. link:../get-started/cache-setup.html["볼륨 캐싱 설정"] .
+
+

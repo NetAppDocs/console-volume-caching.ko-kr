@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: get-started/cache-setup.html 
+keywords: bluexp, volume caching, 
+summary: 볼륨 캐싱을 사용하려면 몇 가지 단계를 거쳐 설정하세요. 
+---
+= 볼륨 캐싱 설정
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+볼륨 캐싱을 사용하려면 몇 가지 단계를 거쳐 설정하세요.
+
+* 검토link:../get-started/cache-prerequisites.html["전제 조건"] 귀하의 환경이 준비되었는지 확인하세요.
+* 콘솔 에이전트를 만듭니다.
+* 볼륨 캐싱을 지원할 수 있는 시스템을 만듭니다.
+
+
+
+
+== NetApp 콘솔에서 콘솔 에이전트 만들기
+
+다음 단계는 NetApp 콘솔에서 콘솔 에이전트를 만드는 것입니다.
+
+볼륨 캐싱을 사용하기 전에 콘솔 에이전트를 생성하려면 해당 내용을 설명하는 NetApp 콘솔 설명서를 참조하십시오. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["콘솔 에이전트를 만드는 방법"^] .
+
+
+
+== 시스템 생성
+
+아직 그렇게 하지 않았다면 소스와 타겟에 대한 시스템을 만들어야 합니다.
+
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/task-getting-started-fsx.html["Amazon FSx for ONTAP 시스템 생성"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["AWS에서 Cloud Volumes ONTAP 실행"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Azure에서 Cloud Volumes ONTAP 실행"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["GCP에서 Cloud Volumes ONTAP 실행"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["기존 Cloud Volumes ONTAP 시스템 추가"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["ONTAP 클러스터를 찾아보세요"^]
+
