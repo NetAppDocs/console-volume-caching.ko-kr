@@ -17,6 +17,5 @@ summary: 볼륨 캐싱은 원격 장소에 지속적이고 쓰기 가능한 볼�
 * link:../use/cache-create.html["캐시 만들기"] .
 * link:../use/cache-manage.html#view-cache-details["캐시 세부 정보 보기"] .
 * link:../use/cache-manage.html#assign-a-different-cache-export-policy["내보내기 정책 변경 및 캐시 크기 조정"] .
-* link:../use/cache-manage.html#delete-a-volume-cache["캐시 삭제"] .
 * link:../use/monitor-jobs.html["볼륨 캐싱 작업 모니터링"]NetApp Console 감사 페이지에서.
 

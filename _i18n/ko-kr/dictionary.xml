@@ -126,7 +126,6 @@
   <block id="c10b8a77856c1097f8b3038f1bfab45b" category="list-text"><block ref="c10b8a77856c1097f8b3038f1bfab45b" category="inline-link-rx"></block></block>
   <block id="a1ebf612d281c8e7fb16bbfa253b9627" category="inline-link">ONTAP 클러스터를 찾아보세요</block>
   <block id="49aaf65c31a811a37b2627a951f6f6d2" category="list-text"><block ref="49aaf65c31a811a37b2627a951f6f6d2" category="inline-link-rx"></block></block>
-  <block id="ff45d71e69fb5930de79de7c94326d7b" category="doc">볼륨 캐싱</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지 사항</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">법적 고지사항은 저작권 표시, 상표, 특허 등에 대한 정보를 제공합니다.</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
@@ -405,7 +404,6 @@
   <block id="086ae240dc59a72dee947da562cf17da" category="list-text"><block ref="638e664503cbc2b4d03651ad48f065e4" category="inline-link-macro-rx"></block> .</block>
   <block id="57eaca7fde0d682a5f4bb1194791b589" category="inline-link-macro">내보내기 정책 변경 및 캐시 크기 조정</block>
   <block id="403db9049e8fc74fb1c958367db6cfab" category="list-text"><block ref="63c74ca1cdc9ec0d7fd9f52c97b2e161" category="inline-link-macro-rx"></block> .</block>
-  <block id="2d2bb0bd1efc96e65cb6deaedc742c41" category="list-text"><block ref="58044a3c76af89738ba5bad3bbf696eb" category="inline-link-macro-rx"></block> .</block>
   <block id="158812c8336b1e3bf3dba3a26e130f17" category="list-text"><block ref="1f92bc5779f2f7dc3b853d4a9f3506c9" category="inline-link-macro-rx"></block>NetApp Console 감사 페이지에서.</block>
   <block id="08f83993cc2b93af6175018abeb278b0" category="summary">볼륨 캐싱은 원격 장소에 지속적이고 쓰기 가능한 볼륨을 제공합니다. NetApp 볼륨 캐싱을 사용하면 데이터 액세스 속도를 높이거나 액세스 빈도가 높은 볼륨의 트래픽을 오프로드할 수 있습니다. 캐시 볼륨은 읽기 작업이 많은 작업, 특히 클라이언트가 동일한 데이터에 반복적으로 액세스해야 하는 경우에 이상적입니다.</block>
   <block id="a047d92e042b55157df7f9db9b86d574" category="doc">감사 페이지에서 볼륨 캐싱 작업 모니터링</block>
@@ -429,4 +427,5 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">새로운 소식</block>
   <block id="482723983a4f2af954e36ff41e567451" category="sidebar">알려진 제한 사항</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">지식과 지원</block>
+  <block id="e14044bbc0be87dcdad7e3cd36657fad" category="sidebar">NetApp 볼륨 캐싱</block>
 </blocks>
