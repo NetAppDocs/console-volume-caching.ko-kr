@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/cache-prerequisites.html 
-keywords: what are volume caching requirements, volume caching prerequisites 
-summary: 환경, 네트워크 액세스, 로그인 및 웹 브라우저에 대한 지원을 확인하여 볼륨 캐싱을 시작하세요. 
+keywords: what are Volume Caching requirements, Volume Caching prerequisites 
+summary: 볼륨 캐싱을 시작하려면 사용 환경, 네트워크 액세스, 로그인 및 웹 브라우저에 대한 지원 여부를 확인하십시오. 
 ---
 = 볼륨 캐싱 전제 조건
 :hardbreaks:

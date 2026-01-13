@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: get-started/cache-faq.html 
-keywords: volume caching faq, caching frequently asked questions 
+keywords: Volume Caching faq, caching frequently asked questions 
 summary: 이 FAQ는 질문에 대한 빠른 답변을 찾는 데 도움이 될 수 있습니다. 
 ---
-= 볼륨 캐싱에 대한 자주 묻는 질문
+= 볼륨 캐싱 관련 자주 묻는 질문
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -14,8 +14,8 @@ summary: 이 FAQ는 질문에 대한 빠른 답변을 찾는 데 도움이 될 �
 [role="lead"]
 이 FAQ는 질문에 대한 빠른 답변을 찾는 데 도움이 될 수 있습니다.
 
-*볼륨 캐싱 URL은 무엇입니까?*  브라우저에서 URL을 입력하세요. https://console.netapp.com/["https://console.netapp.com/"^] BlueXP 콘솔에 접속하려면.
+볼륨 캐싱 URL은 무엇인가요? 브라우저에서 URL을 확인하려면 다음을 입력하세요. https://console.netapp.com/["https://console.netapp.com/"^] BlueXP 콘솔에 접속하려면.
 
-*볼륨 캐싱을 사용하려면 라이선스가 필요합니까?* NetApp 라이선스 파일(NLF)은 필요하지 않습니다.
+볼륨 캐싱을 사용하려면 라이선스가 필요합니까? NetApp 라이선스 파일(NLF)은 필요하지 않습니다.
 
-*볼륨 캐싱을 어떻게 활성화하나요?*  볼륨 캐싱에는 어떠한 활성화도 필요하지 않습니다.  볼륨 캐싱 옵션은 NetApp Console 왼쪽 탐색 창에 자동으로 나타납니다.
+볼륨 캐싱을 활성화하는 방법은 무엇인가요? 볼륨 캐싱은 별도의 활성화 설정이 필요하지 않습니다. 볼륨 캐싱 옵션은 NetApp Console 왼쪽 탐색 메뉴에 자동으로 나타납니다.

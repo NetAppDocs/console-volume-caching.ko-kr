@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/cache-setup.html 
-keywords: bluexp, volume caching, 
-summary: 볼륨 캐싱을 사용하려면 몇 가지 단계를 거쳐 설정하세요. 
+keywords: bluexp, Volume Caching, 
+summary: 볼륨 캐싱을 사용하려면 몇 가지 설정 단계를 수행해야 합니다. 
 ---
 = 볼륨 캐싱 설정
 :hardbreaks:
@@ -12,11 +12,11 @@ summary: 볼륨 캐싱을 사용하려면 몇 가지 단계를 거쳐 설정하�
 
 
 [role="lead"]
-볼륨 캐싱을 사용하려면 몇 가지 단계를 거쳐 설정하세요.
+볼륨 캐싱을 사용하려면 몇 가지 설정 단계를 수행해야 합니다.
 
 * 검토link:../get-started/cache-prerequisites.html["전제 조건"] 귀하의 환경이 준비되었는지 확인하세요.
 * 콘솔 에이전트를 만듭니다.
-* 볼륨 캐싱을 지원할 수 있는 시스템을 만듭니다.
+* 볼륨 캐싱을 지원할 수 있는 시스템을 구축하십시오.
 
 
 
@@ -25,7 +25,7 @@ summary: 볼륨 캐싱을 사용하려면 몇 가지 단계를 거쳐 설정하�
 
 다음 단계는 NetApp Console 에서 콘솔 에이전트를 만드는 것입니다.
 
-볼륨 캐싱을 사용하기 전에 콘솔 에이전트를 생성하려면 해당 내용을 설명하는 NetApp Console 설명서를 참조하십시오. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["콘솔 에이전트를 만드는 방법"^] .
+볼륨 캐싱을 사용하기 전에 콘솔 에이전트를 생성하려면 NetApp Console 설명서를 참조하십시오. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["콘솔 에이전트를 만드는 방법"^].
 
 
 

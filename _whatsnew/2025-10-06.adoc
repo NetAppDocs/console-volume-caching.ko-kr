@@ -1,12 +1,12 @@
-= BlueXP volume caching 이 이제 볼륨 캐싱입니다.
+= BlueXP 볼륨 캐싱이 이제 볼륨 캐싱으로 이름이 변경되었습니다.
 :allow-uri-read: 
 
 
 
 
-=== BlueXP volume caching 이 이제 볼륨 캐싱입니다.
+=== BlueXP 볼륨 캐싱이 이제 볼륨 캐싱으로 이름이 변경되었습니다.
 
-BlueXP volume caching 볼륨 캐싱으로 이름이 바뀌었습니다.
+BlueXP 볼륨 캐싱이 볼륨 캐싱으로 이름이 변경되었습니다.
 
 NetApp Console 왼쪽 탐색 모음에서 *모빌리티* > *볼륨 캐싱*을 선택하여 액세스할 수 있습니다.
 
