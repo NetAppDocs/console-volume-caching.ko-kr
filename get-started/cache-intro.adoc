@@ -20,6 +20,7 @@ ONTAP 9 소프트웨어의 기능인 볼륨 캐싱은 파일 배포를 간소화
 
 
 
+[[netapp-console]]
 == NetApp Console
 
 볼륨 캐싱은 NetApp Console 통해 액세스할 수 있습니다.
@@ -28,16 +29,18 @@ NetApp Console 엔터프라이즈급 온프레미스 및 클라우드 환경 전
 
 NetApp Console 사용하려면 라이선스나 구독이 필요하지 않으며, 스토리지 시스템이나 NetApp 데이터 서비스에 대한 연결을 보장하기 위해 클라우드에 Console 에이전트를 배포해야 할 때만 요금이 부과됩니다. 그러나 콘솔에서 액세스할 수 있는 일부 NetApp 데이터 서비스는 라이선스 기반이거나 구독 기반입니다.
 
-자세히 알아보세요 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["NetApp Console"] .
+link:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp Console"]에 대해 자세히 알아보십시오.
 
 
 
+[[what-is-a-cache]]
 == 캐시란 무엇인가요?
 
 캐시는 호스트와 데이터 소스 사이에 있는 임시 저장 위치입니다.  캐시의 목적은 소스 데이터 중 자주 액세스되는 부분을 저장하는 방식으로, 소스에서 데이터를 가져오는 것보다 더 빠르게 데이터를 제공할 수 있도록 하는 것입니다.  캐시는 여러 호스트에서 데이터에 두 번 이상 액세스하고 공유하는 읽기 중심 환경에서 가장 유용합니다.  캐시 시스템은 데이터 소스가 있는 시스템보다 빠른데, 이는 더 빠른 저장 시스템과 캐시 저장 공간이 호스트와 가까운 것을 통해 달성됩니다.
 
 
 
+[[benefits-of-volume-caching]]
 == 볼륨 캐싱의 이점
 
 볼륨 캐싱은 다음과 같은 이점을 제공합니다.
@@ -52,6 +55,7 @@ NetApp Console 사용하려면 라이선스나 구독이 필요하지 않으며,
 
 
 
+[[what-you-can-do-with-volume-caching]]
 == 볼륨 캐싱으로 할 수 있는 일
 
 볼륨 캐싱을 사용하면 다음과 같은 목표를 달성하기 위해 여러 NetApp 기술을 최대한 활용할 수 있습니다.
@@ -64,18 +68,21 @@ NetApp Console 사용하려면 라이선스나 구독이 필요하지 않으며,
 
 
 
+[[cost]]
 == 비용
 
 NetApp 볼륨 캐싱에 대해 요금을 부과하지 않지만, 데이터 수신 및 송신에 대한 요금은 클라우드 공급업체에 확인해야 합니다.
 
 
 
+[[licensing]]
 == 라이센스
 
 볼륨 캐싱에는 별도의 ONTAP 라이선스가 필요하지 않습니다.
 
 
 
+[[how-volume-caching-works]]
 == 볼륨 캐싱 작동 방식
 
 캐시 볼륨은 소스 볼륨에 의해 백업되는, 밀도가 낮은 볼륨입니다.  캐시 볼륨은 소스 볼륨과 동일한 클러스터에 있을 수도 있고 다른 클러스터에 있을 수도 있습니다.

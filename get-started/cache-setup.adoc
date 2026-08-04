@@ -21,14 +21,16 @@ summary: 볼륨 캐싱을 사용하려면 몇 가지 설정 단계를 수행해�
 
 
 
+[[create-a-console-agent-in-the-netapp-console]]
 == NetApp Console 에서 콘솔 에이전트 만들기
 
 다음 단계는 NetApp Console 에서 콘솔 에이전트를 만드는 것입니다.
 
-볼륨 캐싱을 사용하기 전에 콘솔 에이전트를 생성하려면 NetApp Console 설명서를 참조하십시오. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["콘솔 에이전트를 만드는 방법"^].
+볼륨 캐싱을 사용하기 전에 콘솔 에이전트를 생성하려면 NetApp Console 설명서를 참조하십시오. link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#what-a-console-agent-does["콘솔 에이전트"^]
 
 
 
+[[create-systems]]
 == 시스템 생성
 
 아직 그렇게 하지 않았다면 소스와 타겟에 대한 시스템을 만들어야 합니다.
