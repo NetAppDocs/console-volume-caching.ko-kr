@@ -2,8 +2,6 @@
 section: use
 title: 볼륨 캐싱 사용
 entries:
-- title: 볼륨 캐싱 개요 사용
-  url: "/use/cache-use-overview.html"
 - title: 캐시 만들기
   url: "/use/cache-create.html"
 - title: 캐시 관리

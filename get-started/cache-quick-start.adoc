@@ -4,7 +4,7 @@ permalink: get-started/cache-quick-start.html
 keywords: how to get started with Volume Caching, Volume Caching quick start 
 summary: 볼륨 캐싱을 몇 단계만으로 시작해 보세요. 
 ---
-= 볼륨 캐싱 빠른 시작
+= NetApp Volume Caching 빠른 시작
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -28,6 +28,6 @@ link:../get-started/cache-setup.html["Vlume 캐싱 설정"] .
 
 [role="quick-margin-list"]
 * link:../use/cache-create.html["캐시 만들기"] .
-* link:../use/cache-use-overview.html["캐시 관리, 캐시 편집, 캐시 크기 조정 또는 캐시 삭제"] .
+* link:../use/cache-manage.html["캐시 관리"].
 * link:../use/monitor-jobs.html["볼륨 캐싱 작업 모니터링"].
 

@@ -4,7 +4,7 @@ permalink: get-started/cache-login.html
 keywords: bluexp login, Volume Caching log in 
 summary: NetApp Console 에서 서비스에 액세스하여 볼륨 캐싱을 시작하세요. 
 ---
-= 액세스 볼륨 캐싱
+= NetApp Volume Caching에 액세스하십시오
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

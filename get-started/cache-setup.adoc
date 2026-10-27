@@ -4,7 +4,7 @@ permalink: get-started/cache-setup.html
 keywords: bluexp, Volume Caching, 
 summary: 볼륨 캐싱을 사용하려면 몇 가지 설정 단계를 수행해야 합니다. 
 ---
-= 볼륨 캐싱 설정
+= NetApp Volume Caching 설정
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
